@@ -14,6 +14,7 @@ background for the page.
 3) Use collision detection somewhere, cause it's fucking awesome: 
 http://mbostock.github.io/d3/talk/20111018/collision.html
 
+4) Modularize code with require.js, enhance workflow with SASS and Grunt
 ### Some advice to self:
 ---
 Face a problem, or be downed by it.
