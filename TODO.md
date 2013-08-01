@@ -11,4 +11,10 @@ background for the page.
 
 2) Use Zurb Foundation 'Grid' template instead of HTML5UP.
 
-3) Use collision detection somewhere, cause it's fucking awesome: http://mbostock.github.io/d3/talk/20111018/collision.html
+3) Use collision detection somewhere, cause it's fucking awesome: 
+http://mbostock.github.io/d3/talk/20111018/collision.html
+
+### Some advice to self:
+---
+Face a problem, or be downed by it.
+(make a cool visualization with canvas = excuse to learn canvas)
