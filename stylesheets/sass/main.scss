@@ -1,0 +1,43 @@
+/* Variables */
+/* --------- */
+$mainFontSize: 50px;
+$subFontSize: 30px;
+
+$mainTextColor: #BABABA;
+$subTextColor: #555;
+
+$fontFamily: kavoon;
+
+p.name {
+    position: relative;
+    font-family: $fontFamily;
+    font-size: $mainFontSize;
+    top: 200px;
+    left: 100px;
+    color: $mainTextColor;
+}
+p.message {
+    position: relative;
+    font-family: $fontFamily;
+    font-size: $subFontSize;
+    top: 155px;
+    left: 138px;
+    color: $subTextColor;
+}
+div.title {
+    position: relative;
+    float: right;
+    right: 450px;
+    font-family: $fontFamily;
+    font-size: $mainFontSize;
+    color: $mainTextColor;
+}
+a.project {
+    position: relative;
+    float: right;
+    top: 80px;
+    font-family: $fontFamily;
+    font-size: $subFontSize;
+    color: $subTextColor;
+    text-decoration: none;
+}
