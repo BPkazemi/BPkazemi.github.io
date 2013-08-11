@@ -6,38 +6,117 @@ $subFontSize: 30px;
 $mainTextColor: #BABABA;
 $subTextColor: #555;
 
-$fontFamily: kavoon;
+$mainFontFamily: kavoon;
 
-p.name {
-    position: relative;
-    font-family: $fontFamily;
-    font-size: $mainFontSize;
-    top: 200px;
-    left: 100px;
-    color: $mainTextColor;
+/* Mixins */
+/* ------ */
+@mixin border-radius( $radius:2px ) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
 }
-p.message {
-    position: relative;
-    font-family: $fontFamily;
-    font-size: $subFontSize;
-    top: 155px;
-    left: 138px;
-    color: $subTextColor;
+
+ul {
+    list-style-type: none;
 }
-div.title {
-    position: relative;
-    float: right;
-    right: 450px;
-    font-family: $fontFamily;
-    font-size: $mainFontSize;
-    color: $mainTextColor;
-}
-a.project {
-    position: relative;
-    float: right;
-    top: 80px;
-    font-family: $fontFamily;
-    font-size: $subFontSize;
+a {
     color: $subTextColor;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: $subTextColor;
+    cursor: pointer;
+}
+
+body {
+    background: url(../../images/greyzz.png);
+}
+
+.main-wrapper {
+    width: 100%;
+    font-family: $mainFontFamily, sans-serif;
+}
+
+.left {
+    width: 35%;
+    float: left;
+
+    .github {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        font-size: 10px;
+    }
+
+
+    .content-wrapper {
+        position: relative;
+        top: 250px;
+        left: 100px;
+    }
+
+
+    .tab {
+        display: inline-block;
+        @include border-radius( 5px );
+
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .title.name {
+        display: inline-block;
+        font-size: $mainFontSize;
+        color: $mainTextColor;
+        cursor: default;
+    }
+    .subtitle {
+        cursor: default;
+    }
+    .title-menu {
+        font-size: $subFontSize;
+        color: $subTextColor;
+        // display: none;
+    }
+}
+.right {
+    width: 65%;
+    float: left;
+
+    .content-wrapper {
+        position: relative;
+    }
+
+    .title {
+        visibility: hidden;
+        font-size: $mainFontSize;
+        color: $mainTextColor;
+    }
+
+    .content {
+        font-size: $mainFontSize;
+        color: $subTextColor;
+    }
+
+    .bucketlist-tab-wrapper {
+        cursor: default !important;
+    }
+
+    .projects-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-tab-wrapper, .projects-tab-wrapper, 
+    .blog-tab-wrapper, .bucketlist-tab-wrapper {
+        display: none;
+        cursor: pointer;
+    }
+
+    .quote {
+        position: absolute;
+        right: 50px;
+        bottom: 5px;
+    }
 }

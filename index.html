@@ -12,34 +12,85 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <!-- ~~~~~~~ Stylesheets ~~~~~~~ -->
+        <!-- Bootstrap 3 -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Kavoon Google Font -->
         <link href='http://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>
+        <!-- Application CSS -->
         <link rel="stylesheet" href="stylesheets/css/normalize.css">
         <link rel="stylesheet" href="stylesheets/css/h5bp.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/css/main.css">
+
+        <!-- ~~~~~~~~ Scripts ~~~~~~~~ -->
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+        <!-- Application Scripts -->
+        <script type="text/javascript" src="./js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <div class="outer-wrapper">
-        	<div class="navbar">
-        	</div>
-        	<div class="content-wrapper">
-        		<!-- IDEA: On hover, animate name to "Babak Pourkazemi" (using D3.js?) -->
-        		<p class="name">BPkazemi</p>
-        		<p class="message">~~ Under Construction ~~</p>
-        	</div>
-        	<div class="projects-wrapper">
-        		<div class="title">Projects</div>
-        		<a class="project" href="http://bpkazemi.github.io/NTVisual">~ Nassim Taleb Visualization</a>
-        	</div>
-        	<div class="footer"></div>
-        </div>
+        <!-- Application content -->
+        <div class="main-wrapper">
+            <!-- ~~ Left -->
+            <div class="left">
+                <a href="http://www.github.com/BPKazemi" class="github">Don't click me!</a>
+                <div class="content-wrapper">
+                    <div class="title name">BPkazemi</div>
+                    <div class='subtitle'> (~~ Student @ UVA ~~)</div>
+                    <div class="title-menu">
+                        <ul>
+                            <li><a class="tab" id="about-tab">About</a></li>
+                            <li><a class="tab" id="projects-tab">Projects</a></li>
+                            <!-- <li><a class="tab" id="blog-tab">Blog</a></li> -->
+                            <li><a class="tab" id="bucketlist-tab">Bucket List</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ~~ Right -->
+            <div class="right">
+                <div class="content-wrapper">
+                    <div class="tab-content about-tab-wrapper">
+                        <div class="title" id="about">About</div>
+                        <div class="content">Live, laugh, eat, hike, think, and code.</div>
+                    </div>
+                    <div class="tab-content projects-tab-wrapper">
+                        <div class="title">Projects</div>
+                        <ul class="projects-list content"> 
+                            <li><a href="http://bpkazemi.github.io/NTVisual">Nassim Taleb Visualization</a></li>
+                            <!-- <li>The Rule of Three</li>
+                            <li>Leap Motion DJ</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-content blog-tab-wrapper">
+                        <div class="title" id="blog">Blog</div>
+                        <div class="content blog-post">
+                            Hang with Heavyweights
+                        </div>
+                    </div>
+                    <div class="tab-content bucketlist-tab-wrapper">
+                        <div class="title" id="bucket list">Bucket List</div>
+                        <ol class="content">
+                            <li>Skydive</li>
+                            <li>Climb a mountain</li>
+                            <li>Camp out for a week</li>
+                            <li>Live abroad for >= 3 weeks</li>
+                            <li>Start a company</li>
+                            <li>Live in a city</li>
+                            <li>Go to space</li>
+                        </ol>
+                    </div>
+                </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!-- // <script src="js/main.js"></script> -->
+                <div class="quote">Make life good.</div>
+            </div>
+        </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

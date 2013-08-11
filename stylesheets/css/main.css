@@ -1,34 +1,78 @@
 /* Variables */
 /* --------- */
-p.name {
-  position: relative;
-  font-family: kavoon;
-  font-size: 50px;
-  top: 200px;
-  left: 100px;
-  color: #bababa; }
+/* Mixins */
+/* ------ */
+ul {
+  list-style-type: none; }
 
-p.message {
-  position: relative;
-  font-family: kavoon;
-  font-size: 30px;
-  top: 155px;
-  left: 138px;
-  color: #555555; }
-
-div.title {
-  position: relative;
-  float: right;
-  right: 450px;
-  font-family: kavoon;
-  font-size: 50px;
-  color: #bababa; }
-
-a.project {
-  position: relative;
-  float: right;
-  top: 80px;
-  font-family: kavoon;
-  font-size: 30px;
+a {
   color: #555555;
   text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  color: #555555;
+  cursor: pointer; }
+
+body {
+  background: url(../../images/greyzz.png); }
+
+.main-wrapper {
+  width: 100%;
+  font-family: kavoon, sans-serif; }
+
+.left {
+  width: 35%;
+  float: left; }
+  .left .github {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    font-size: 10px; }
+  .left .content-wrapper {
+    position: relative;
+    top: 250px;
+    left: 100px; }
+  .left .tab {
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px; }
+  .left .title.name {
+    display: inline-block;
+    font-size: 50px;
+    color: #bababa;
+    cursor: default; }
+  .left .subtitle {
+    cursor: default; }
+  .left .title-menu {
+    font-size: 30px;
+    color: #555555; }
+
+.right {
+  width: 65%;
+  float: left; }
+  .right .content-wrapper {
+    position: relative; }
+  .right .title {
+    visibility: hidden;
+    font-size: 50px;
+    color: #bababa; }
+  .right .content {
+    font-size: 50px;
+    color: #555555; }
+  .right .bucketlist-tab-wrapper {
+    cursor: default !important; }
+  .right .projects-list {
+    margin: 0;
+    padding: 0; }
+  .right .about-tab-wrapper, .right .projects-tab-wrapper,
+  .right .blog-tab-wrapper, .right .bucketlist-tab-wrapper {
+    display: none;
+    cursor: pointer; }
+  .right .quote {
+    position: absolute;
+    right: 50px;
+    bottom: 5px; }
