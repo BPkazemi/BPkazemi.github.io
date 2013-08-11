@@ -15,10 +15,22 @@ $mainFontFamily: kavoon;
     -moz-border-radius: $radius;
     border-radius: $radius;
 }
+html {
+    height: 100%;
+
+    body {
+        background: url(../../images/greyzz.png);
+        height: 100%;
+    }
+}
 
 ul {
     list-style-type: none;
 }
+ol {
+    margin-left: 35px;
+}
+
 a {
     color: $subTextColor;
     text-decoration: none;
@@ -29,18 +41,18 @@ a:hover {
     cursor: pointer;
 }
 
-body {
-    background: url(../../images/greyzz.png);
-}
 
 .main-wrapper {
     width: 100%;
+    height: 100%;
     font-family: $mainFontFamily, sans-serif;
 }
 
 .left {
     width: 35%;
+    height: 100%;
     float: left;
+    background: #eeeddf;
 
     .github {
         position: absolute;

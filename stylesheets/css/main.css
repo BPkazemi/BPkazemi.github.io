@@ -2,8 +2,17 @@
 /* --------- */
 /* Mixins */
 /* ------ */
+html {
+  height: 100%; }
+  html body {
+    background: url(../../images/greyzz.png);
+    height: 100%; }
+
 ul {
   list-style-type: none; }
+
+ol {
+  margin-left: 35px; }
 
 a {
   color: #555555;
@@ -14,16 +23,16 @@ a:hover {
   color: #555555;
   cursor: pointer; }
 
-body {
-  background: url(../../images/greyzz.png); }
-
 .main-wrapper {
   width: 100%;
+  height: 100%;
   font-family: kavoon, sans-serif; }
 
 .left {
   width: 35%;
-  float: left; }
+  height: 100%;
+  float: left;
+  background: #eeeddf; }
   .left .github {
     position: absolute;
     top: 10px;
