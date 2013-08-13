@@ -51,6 +51,7 @@ ul {
 }
 ol {
     margin-left: 35px;
+    margin-top: 0px;
 }
 
 a {
@@ -146,6 +147,10 @@ a:hover {
         color: $subTextColor;
         margin-left: 5%;
         cursor: default;
+    }
+    a.content:hover {
+        color: $linkHover;
+        background: $royalBlue;
     }
 
     .bucketlist-tab-wrapper {

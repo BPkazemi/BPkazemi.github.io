@@ -15,7 +15,8 @@ ul {
   list-style-type: none; }
 
 ol {
-  margin-left: 35px; }
+  margin-left: 35px;
+  margin-top: 0px; }
 
 a {
   color: #0b2c3c;
@@ -90,6 +91,9 @@ a:hover {
     color: #0b2c3c;
     margin-left: 5%;
     cursor: default; }
+  .right a.content:hover {
+    color: #dadfe1;
+    background: #0b2c3c; }
   .right .bucketlist-tab-wrapper {
     cursor: default !important; }
   .right .projects-list {
