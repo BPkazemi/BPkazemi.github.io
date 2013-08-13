@@ -1,12 +1,30 @@
 /* Variables */
 /* --------- */
+
+$mainFontFamily: kavoon;
+
+/* Colors */
+$flatRed: #FF6666;
+
+$alizarin: #e74c3c;
+$royalBlue: #0B2C3C;
+$classyGrey: #DADFE1;
+$lightGrey: #BABABA;
+$desert: #F1DDBB;
+
 $mainFontSize: 50px;
 $subFontSize: 30px;
 
-$mainTextColor: #BABABA;
-$subTextColor: #555;
+// Color 'Control Panel'
+$leftPaneColor: $alizarin;
 
-$mainFontFamily: kavoon;
+$mainTextColor: $lightGrey;
+$subTextColor: $royalBlue;
+
+$linkHover: $classyGrey;
+$linkHoverbackground: $royalBlue;
+
+$nameColor: $desert;
 
 /* Mixins */
 /* ------ */
@@ -15,6 +33,10 @@ $mainFontFamily: kavoon;
     -moz-border-radius: $radius;
     border-radius: $radius;
 }
+
+/* General styles */
+/* -------------- */
+
 html {
     height: 100%;
 
@@ -33,14 +55,15 @@ ol {
 
 a {
     color: $subTextColor;
-    text-decoration: none;
+    text-decoration: none !important;
+    cursor: pointer !important;
 }
 a:hover {
-    text-decoration: none;
-    color: $subTextColor;
-    cursor: pointer;
-}
+    color: $linkHover;
+    @include border-radius( 5px );
 
+    background: $linkHoverbackground;
+}
 
 .main-wrapper {
     width: 100%;
@@ -48,11 +71,18 @@ a:hover {
     font-family: $mainFontFamily, sans-serif;
 }
 
+/* Specific styles */
+/* --------------- */
+
 .left {
     width: 35%;
     height: 100%;
     float: left;
-    background: #eeeddf;
+    background: $leftPaneColor;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+    transition: 0.2s;
 
     .github {
         position: absolute;
@@ -61,26 +91,32 @@ a:hover {
         font-size: 10px;
     }
 
-
     .content-wrapper {
         position: relative;
-        top: 250px;
-        left: 100px;
+        top: 45%;
+        left: 20%;
+        width: 80%;
+        // top: 250px;
+        // left: 100px;
     }
-
 
     .tab {
         display: inline-block;
-        @include border-radius( 5px );
 
         padding: 5px;
         margin-top: 5px;
     }
 
+    .selected {
+        color: lighten($nameColor, 7.5%);
+        @include border-radius( 5px );
+        background: transparent;
+    }
+
     .title.name {
         display: inline-block;
         font-size: $mainFontSize;
-        color: $mainTextColor;
+        color: $nameColor;
         cursor: default;
     }
     .subtitle {
@@ -89,7 +125,6 @@ a:hover {
     .title-menu {
         font-size: $subFontSize;
         color: $subTextColor;
-        // display: none;
     }
 }
 .right {
@@ -109,6 +144,8 @@ a:hover {
     .content {
         font-size: $mainFontSize;
         color: $subTextColor;
+        margin-left: 5%;
+        cursor: default;
     }
 
     .bucketlist-tab-wrapper {
@@ -130,5 +167,6 @@ a:hover {
         position: absolute;
         right: 50px;
         bottom: 5px;
+        cursor: default;
     }
 }
