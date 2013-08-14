@@ -38,8 +38,9 @@ a:hover {
 /* Specific styles */
 /* --------------- */
 .left {
-  width: 35%;
+  width: 25%;
   height: 100%;
+  opacity: 0.92;
   float: left;
   background: #e74c3c;
   -webkit-transition: 0.2s;
