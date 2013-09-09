@@ -32,13 +32,12 @@ a:hover {
 
 .main-wrapper {
   width: 100%;
-  height: 100%;
-  font-family: kavoon, sans-serif; }
+  height: 100%; }
 
 /* Specific styles */
 /* --------------- */
 .left {
-  width: 25%;
+  width: 27%;
   height: 100%;
   opacity: 0.92;
   float: left;
@@ -46,7 +45,8 @@ a:hover {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
-  transition: 0.2s; }
+  transition: 0.2s;
+  font-family: kavoon, sans-serif; }
   .left .github {
     position: absolute;
     top: 10px;
@@ -54,8 +54,8 @@ a:hover {
     font-size: 10px; }
   .left .content-wrapper {
     position: relative;
-    top: 45%;
-    left: 20%;
+    top: 10%;
+    left: 18%;
     width: 80%; }
   .left .tab {
     display: inline-block;
@@ -80,7 +80,8 @@ a:hover {
 
 .right {
   width: 65%;
-  float: left; }
+  float: left;
+  font-family: lato, sans-serif; }
   .right .content-wrapper {
     position: relative; }
   .right .title {

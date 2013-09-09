@@ -5,12 +5,12 @@ $(document).ready(function() {
 
 	$('.left').on('mouseover', function() {
 		$(this).css({
-			width: '35%',
+			width: '32%',
 			opacity: 1
 		});
 	}).on('mouseout', function() {
 		$(this).css({
-			width: '29%',
+			width: '27%',
 			opacity: 0.92
 		});
 	});

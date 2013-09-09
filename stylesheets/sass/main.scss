@@ -1,7 +1,8 @@
 /* Variables */
 /* --------- */
 
-$mainFontFamily: kavoon;
+$sidebarFont: kavoon;
+$contentFont: lato;
 
 /* Colors */
 $flatRed: #FF6666;
@@ -69,14 +70,13 @@ a:hover {
 .main-wrapper {
     width: 100%;
     height: 100%;
-    font-family: $mainFontFamily, sans-serif;
 }
 
 /* Specific styles */
 /* --------------- */
 
 .left {
-    width: 25%;
+    width: 27%;
     height: 100%;
     opacity: 0.92;
     float: left;
@@ -85,6 +85,7 @@ a:hover {
         -moz-transition: 0.2s;
         -o-transition: 0.2s;
     transition: 0.2s;
+    font-family: $sidebarFont, sans-serif;
 
     .github {
         position: absolute;
@@ -95,11 +96,9 @@ a:hover {
 
     .content-wrapper {
         position: relative;
-        top: 45%;
-        left: 20%;
+        top: 10%;
+        left: 18%;
         width: 80%;
-        // top: 250px;
-        // left: 100px;
     }
 
     .tab {
@@ -132,6 +131,7 @@ a:hover {
 .right {
     width: 65%;
     float: left;
+    font-family: $contentFont, sans-serif;
 
     .content-wrapper {
         position: relative;
